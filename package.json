@@ -1,9 +1,9 @@
 {
-  "name": "@esm-bundle/autopublish-template",
-  "version": "20.0.0",
-  "description": "Repo to test esm-bundle's automatic publishing",
-  "main": "index.js",
-  "module": "esm/index.js",
+  "name": "@esm-bundle/xstream",
+  "version": "0.0.0-unpublished.0",
+  "description": "ESM version of xstream",
+  "main": "xstream.js",
+  "module": "esm/xstream.js",
   "type": "module",
   "scripts": {
     "test": "yarn build && concurrently -n w: 'yarn:test:*'",
@@ -18,7 +18,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn test"
+      "pre-commit": "pretty-quick --staged "
     }
   },
   "files": [
@@ -27,17 +27,18 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/esm-bundle/autopublish-template.git"
+    "url": "git+https://github.com/esm-bundle/xstream.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/esm-bundle/autopublish-template/issues"
+    "url": "https://github.com/esm-bundle/xstream/issues"
   },
-  "homepage": "https://github.com/esm-bundle/autopublish-template#readme",
+  "homepage": "https://github.com/esm-bundle/xstream#readme",
   "devDependencies": {
-    "autopublish-template": "20.0.0",
-    "esm-bundle-scripts": "1.2.0"
+    "esm-bundle-scripts": "1.2.0",
+    "karma-firefox-launcher": "^2.1.0",
+    "xstream": "^11.14.0"
   },
   "publishConfig": {
     "access": "public"
